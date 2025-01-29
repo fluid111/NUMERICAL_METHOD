@@ -1,14 +1,4 @@
 #include <stdio.h>
-int main(){
-    float x[100], y[100], dt[100][100];
-    int n,i,j;
-    printf("Enter the order of matrix ");
-    scanf("%d", &n);
-    
-    printf("enter x values & y: \n");
-    for(int i=0; i<n; i++){
-     dt[i][0]=y[i];
-    }#include <stdio.h>
 
 int main() {
     float x[100], y[100], dt[100][100];
@@ -45,23 +35,5 @@ int main() {
     }
 
     printf("AASHISH THAPA MAGAR\n");
-    return 0;
-}
-
-    for(j=1; i<n; j++){
-        for(i=0; i<n-j-1; j++){
-            dt[i][j]=(dt[i+1][i-1]-dt[i][j-2])/x[i+j]-x[i];
-        }
-    }
-    
-    printf("The divided difference table is :\n");
-    // printf("y \t del y \t delsq y \t delcub y  :\n");
-    for(int i=0; i<n; i++){
-        for(int j=0; j<=n-i-1; j++){
-            printf("%d \t", dt[i][j]);
-        }
-        printf("\n");
-    }
-    printf("AASHISH THAPA MAGAR");
     return 0;
 }
