@@ -23,7 +23,7 @@ int main(){
 		else{
 			a=c;
 		}
-	}while(fabs(fc)>0.001);
+	}while(fabs(b-a)>0.001);
 	printf("\nIteration: ");
 	printf("%d",i);
 	printf("\nRoot is: ");

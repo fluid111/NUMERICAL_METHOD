@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-float f(float);
-float g(float);
+
 float f(float x){
 	return ((x*x*x*x)-x-10);
 }
